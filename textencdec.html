@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Text</title>
+	<meta charset="UTF-8">
+	<!-- Import Roboto Slab -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<!-- Import CSS and JS -->
+	<link rel="stylesheet" href="styleaud.css">
+	<script src="zerosteg.js"></script>
+</head>
+<body>
+	
+	<div class="parent">
+		<!-- Encode -->
+		<div class="child">
+			<p>Message to hide:</p>
+			<textarea class="textarea-small" id="steg"></textarea>
+			<p>Text to mask message within:</p>
+			<textarea class="textarea-small" id="mask"></textarea>
+			<br>
+			<br>
+			<div class="button-wrap">
+				<button onclick="encode()">Encode</button>
+			</div>
+		</div>
+		<!-- Decode -->
+		<div class="child">
+			<p>Ciphertext:</p>
+			<textarea class="textarea-small" id="ciphertext"></textarea>
+			<br>
+			<br>
+			<div class="button-wrap">
+				<button onclick="decode()">Decode</button>
+			</div>
+		</div>
+	</div>
+		
+	<br>
+	<!-- Result of encode/decode will be inserted here -->
+	<h3>Result - copy and paste:</h3>
+	<textarea class="textarea-small" id="result"></textarea>
+</body>
+</html>

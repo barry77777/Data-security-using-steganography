@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0%;
+  background-color: red;
+}
+
+.right {
+  right: 0%;
+  background-color: yellow;
+}
+.leftt {
+  left: 25%;
+  background-color: yellow;
+}
+
+.rightt {
+  right: 25%;
+  background-color: red;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="enc.png" alt="">
+    <h2>Image encryption</h2>
+    <div class="form-group" id="encode-button">
+    <button class="encode btn btn-default pull-right" onclick="window.location.href = 'imageenc.html';">
+        Click Here
+    </button>
+    </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="enc.png" alt="">
+    <h2>Video Encryption</h2>
+    <div class="form-group" id="encode-button">
+    <button class="encode btn btn-default pull-right" onclick="window.location.href = 'encvideo.html';">
+         Click Here
+    </button>
+  </div>
+</div>
+</div>
+
+<div class="split leftt">
+    <div class="centered">
+      <img src="enc.png" alt="">
+      <h2>Audio Encryption</h2>
+      <div class="form-group" id="encode-button">
+      <button class="encode btn btn-default pull-right" onclick="window.location.href = 'src1/src/static/index.html';">
+        Click Here
+      </button>
+      
+      </div>
+    </div>
+  </div>
+  
+    <div class="split rightt">
+    <div class="centered">
+      <img src="enc.png" alt="">
+      <h2>Text Encryption</h2>
+      <div class="form-group" id="encode-button">
+      <button class="encode btn btn-default pull-right" onclick="window.location.href = 'textencdec.html';">
+        Click Here
+      </button>
+    </div>
+  </div>
+  </div>  
+  
+     
+
+
+
+</body>
+</html>

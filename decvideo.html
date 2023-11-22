@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Decryption</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    input[type="file"] {
+      display: block;
+      margin: 20px 0;
+    }
+    
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    #secretTextDisplay {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Video decryption</h1>
+  
+  
+ 
+  <input type="file" id="encryptedVideoInput" accept="video/*">
+  <button onclick="decryptAndDisplay()">Decrypt and Display</button>
+  
+  <div id="secretTextDisplay"></div>
+  <div id="secretTextDisplay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE htm>
+  <head>   
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="src/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="page-header">
+      <h1>Image Decrypt</h1>
+    </div>
+
+    
+
+
+      <div class="tab-pane" id="decode">
+        <div>
+          <h2>Decode Image</h2>
+          <p class="alert alert-info">
+            Choose the image from which you want to decode the message.
+          </p>
+          <form class="form">
+            <div class="form-group">
+              <input class="form-control" type="file" name="decodeFile" onchange="previewDecodeImage()" />
+            </div>
+            <div class="form-group">
+              <button class="decode btn btn-default pull-right" onclick="decodeMessage()">
+                Decode
+              </button>
+            </div>
+          </form>
+          <div class="clearfix"></div>
+        </div>
+        <div class="binary-decode" style="display: none">
+          <h3>Hidden message</h3>
+          <textarea class="form-control message" style="word-wrap: break-word">
+            </textarea>
+        </div>
+        <div class="decode" style="display: none">
+          <h3>Image</h3>
+          <canvas></canvas>
+        </div>
+      </div>
+
+      
+        
+    </div>
+  </div>
+
+    <script src="src/jquery.min.js"></script>
+    <script src="src/bootstrap.min.js"></script>
+    <script type="text/JavaScript" src="src/script.js"></script>
+  </body>
+</html>
